@@ -1,0 +1,164 @@
+body {
+  font-family: "Shadows+Into+Ligth+To", sans-serif;
+  background-image: url("../imagens/Background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  backdrop-filter: blur(4px);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.zeldas {
+  display: flex;
+  gap: 30px;
+  padding: 10px 0;
+}
+
+.cartao-zelda {
+  display: none;
+  max-width: 360px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.cartao-zelda.aberto {
+  display: block;
+}
+.cartao-zelda img {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.cartao-zelda .cartao-topo {
+  padding: 30px 40px 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.cartao-zelda .nome {
+  margin-bottom: 5px;
+}
+
+.cartao-zelda .tipo {
+  background-color: #16732d;
+  opacity: 0.7;
+  border-radius: 50px;
+  padding: 2px 10px;
+  color: #23dd35;
+ 
+}
+
+.cartao-zelda .detalhes {
+  color: #16732d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartao-zelda .cartao-informacoes {
+  background-color: #e6ebee;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 30px 50px;
+  margin-top: -70px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  
+}
+
+.cartao-zelda .cartao-informacoes h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #695e9a;
+}
+
+.cartao-zelda .cartao-informacoes .descricao {
+  padding: 0 10px;
+  font-size: 15px;
+  max-height: 250px;
+  overflow-y: scroll;
+}
+
+.tipo-heroi {
+  background-color: #18b423;
+}
+.tipo-ajudante {
+  background-color: #F9C801;
+}
+
+.tipo-antagonista {
+  background-color: #63479d;
+}
+
+.tipo-guia {
+  background-color: #9a912c;
+}
+
+.tipo-cavalo {
+  background-color: #eeecd2;
+}
+
+.tipo-fada {
+  background-color: #b50843;
+}
+
+.tipo-Skull{
+    background-color: #B1C4B9;
+}
+.tipo-tranformacao {
+  background-color:#F9C801;
+}
+
+.listagem {
+  max-width: 200px;
+  
+}
+
+.listagem .zelda img {
+  width: 25%;
+}
+
+.listagem .zelda {
+  background-color: #0B23B2;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  min-height: 70px;
+  transition: 0.15 ease-in-out;
+ 
+}
+
+.listagem .zelda:hover {
+    transform: scale(1.05);
+}
+
+.listagem .zelda span{
+    padding-right: 3.7px;
+}
+
+.listagem .zelda.ativo {
+    background-color: #E2BF33;
+}
+
